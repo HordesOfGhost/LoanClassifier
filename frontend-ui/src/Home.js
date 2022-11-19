@@ -41,7 +41,7 @@ class JsonForm extends Component {
     event.preventDefault();
     // this.setState({ score: 10 });
 
-    const url = "http://localhost:8000/scoreFile";
+    const url = "http://localhost:8000/scoreJson";
     const bodyData = JSON.stringify({
       Gender: this.state.Gender,
       Married: this.state.Married,
@@ -207,7 +207,9 @@ class JsonForm extends Component {
             <input type="submit" value="Submit"></input>
           </form>
         </div>
-        <div>The Probablity of getting approval is {this.state.score}</div>
+        <div>
+          <h3>The Probablity of getting approval is {this.state.score}</h3>
+        </div>
       </div>
     );
   }
